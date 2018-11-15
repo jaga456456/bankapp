@@ -1,0 +1,11 @@
+{
+    "userName":"Jagadeesh008",
+    "firstname":"Jagadeesh",
+    "lastname":"Kumar",
+    "userData": {
+        "address":"Edison,NJ"
+    },
+    "hobbies": [
+        "music","movies","sport"
+    ]
+}

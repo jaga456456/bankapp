@@ -1,0 +1,7 @@
+<div class="header-wrapper">
+  <div *ngIf="headerSettings?.home" class="header-button" (click)="goToHome()">HOME</div>
+  <div *ngIf="headerSettings?.news" class="header-button" (click)="goToNews()">NEWS</div>
+  <div *ngIf="headerSettings?.services" class="header-button" (click)="goToServices()">SERVICES</div>
+  <div *ngIf="headerSettings?.products" class="header-button" (click)="goToProducts()">PRODUCTS</div>
+  <div *ngIf="headerSettings?.contacts" class="header-button" (click)="goToContacts()">CONTACTS</div>
+</div>

@@ -1,0 +1,12 @@
+<p *ngIf="userDetailsInput">
+  Hello {{userDetailsInput.firstname+' '+userDetailsInput.lastname}}
+</p>
+<p>Hobbies</p>
+<ul *ngIf="userDetailsInput; else temp">
+  <li *ngFor="let hobby of userDetailsInput.hobbies">{{hobby}}</li>
+</ul>
+<ng-template #temp>
+  <p>Hi I am ng-template</p>
+</ng-template>
+<p #myTemp>Hello I am a small template</p>
+<input type="text" *ngIf="userDetailsInput" [(ngModel)]="userDetailsInput.firstname" #myInput>

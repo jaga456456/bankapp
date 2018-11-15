@@ -1,0 +1,38 @@
+<div class="box through ">
+<p *ngIf="userDetails">
+    Hello {{userDetails.firstname+' '+userDetails.lastname}}
+  </p>
+  <p>Hobbies</p>
+  <ul *ngIf="userDetails">
+    <li *ngFor="let hobby of userDetails.hobbies">{{hobby}}</li>
+  </ul>
+<div class="position">
+
+</div>
+  
+<p *ngIf="userDetails">
+    Hello {{userDetails.firstname+' '+userDetails.lastname}}
+  </p>
+  <p>Hobbies</p>
+  <ul *ngIf="userDetails">
+    <li *ngFor="let hobby of userDetails.hobbies">{{hobby}}</li>
+  </ul>
+  <p *ngIf="userDetails">
+    Hello {{userDetails.firstname+' '+userDetails.lastname}}
+  </p>
+  <p>Hobbies</p>
+  <ul *ngIf="userDetails">
+    <li *ngFor="let hobby of userDetails.hobbies">{{hobby}}</li>
+  </ul>
+  
+  <p *ngIf="DashDetails">
+  Hello {{DashDetails.password+ ' '+ DashDetails.username}}
+  </p>
+</div>
+<p>Hobbies</p>
+<ul *ngIf="userDetails">
+  <li *ngFor="let hobby of userDetails.hobbies">{{hobby}}</li>
+</ul>
+<p *ngIf="userDetails">
+  Hello {{userDetails.firstname+' '+userDetails.lastname}}
+</p>

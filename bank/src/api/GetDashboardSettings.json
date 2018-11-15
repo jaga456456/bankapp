@@ -1,0 +1,13 @@
+{
+    "headersettings": {
+        "home": true,
+        "products": true,
+        "services": true,
+        "contacts":true,
+        "news":true
+    },
+    "footerSettings": false,
+    "username": "Kumar",
+    "password": "Jagadeesh"
+}
+

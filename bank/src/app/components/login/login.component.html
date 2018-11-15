@@ -1,0 +1,13 @@
+    <div [formGroup]="login">
+       <input type="text" class="fortextbox"  placeholder="emailid" [formControl]="login.controls['emailId']" >
+       <br/>
+       <p *ngIf="login.controls['emailId'].hasError('required') && login.controls['emailId'].touched">Email Id Required</p>
+       <p *ngIf="login.controls['emailId'].hasError('email') && login.controls['emailId'].touched">Invalid Email ID</p>
+       <input type="password" class="fortextbox" placeholder="passwd" [formControl]="login.controls['password']" #password>
+       <br/>
+       <p *ngIf="login.controls['password'].hasError('required') && login.controls['password'].touched">Password Required</p>
+       <p *ngIf="login.controls['password'].hasError('minlength') && login.controls['password'].touched">Password should be atleast 6 characters in length</p>
+       <p *ngIf="login.controls['password'].hasError('pattern') && login.controls['password'].touched">Wrong Pattern</p>
+       <button [disabled]="!login.valid">Login</button>
+       <button (click)="showPassword()">Show Password</button>
+    </div>
