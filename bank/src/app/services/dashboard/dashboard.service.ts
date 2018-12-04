@@ -13,3 +13,4 @@ export class DashboardService {
     return this.http.get('GetDashboardSettings.json');
   }
 }
+ 

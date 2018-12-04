@@ -1,0 +1,11 @@
+.image {
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+ 
+  background-size: cover;
+  width: auto;
+  background-image: url('../assets/images/bngimg.jpg');
+  background-position: 100% 100%;
+  position: absolute;
+}

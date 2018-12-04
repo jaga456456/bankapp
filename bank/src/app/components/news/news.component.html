@@ -11,3 +11,12 @@
     The username and password are <strong>{{dashboardDetailsInput.username}}</strong> and <strong>{{dashboardDetailsInput.password}}
     </strong> respectively.</p>
 </div>
+
+<p *ngIf="true">
+  Expression is true and ngIf is true.
+  This paragraph is in the DOM.
+</p>
+<p *ngIf="false">
+  Expression is false and ngIf is false.
+  This paragraph is not in the DOM.
+</p>

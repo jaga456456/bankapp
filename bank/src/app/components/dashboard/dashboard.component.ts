@@ -19,18 +19,18 @@ export class DashboardComponent implements OnInit {
 
   setNavigation(event) {
     this.currentPath = event;
-    switch(this.currentPath) {
-      case 'home' : this.router.navigateByUrl('/dashboard/home');
-            break;
-      case 'news' : this.router.navigateByUrl('/dashboard/news');
-            break;
-      case 'services' : this.router.navigateByUrl('/dashboard/services');
-            break;
-      case 'products' : this.router.navigateByUrl('/dashboard/products');
-            break;
-      case 'contacts' : this.router.navigateByUrl('/dashboard/contacts');
-            break;
-    }
+    // switch(this.currentPath) {
+    //   case 'home' : this.router.navigateByUrl('/dashboard/home');
+    //         break;
+    //   case 'news' : this.router.navigateByUrl('/dashboard/news');
+    //         break;
+    //   case 'services' : this.router.navigateByUrl('/dashboard/services');
+    //         break;
+    //   case 'products' : this.router.navigateByUrl('/dashboard/products');
+    //         break;
+    //   case 'contacts' : this.router.navigateByUrl('/dashboard/contacts');
+    //         break;
+    // }
   }
 
   getDashBoardSettings() {        

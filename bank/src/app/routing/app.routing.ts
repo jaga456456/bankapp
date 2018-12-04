@@ -57,28 +57,28 @@ export const RegisterRoutingModule: ModuleWithProviders = RouterModule.forChild(
 const dashboardRoutes : Routes =[
     {
         path: '',
-        component: DashboardComponent,
-        children: [
-        {
-            path: '',
-            redirectTo: 'home'
-        },  {
-            path: 'home',
-            component: HomeComponent
-        },  {
-            path:'products',
-            component: ProductsComponent
-        },  {
-            path:'services',
-            component: ServicesComponent
-        },  {
-            path:'news',
-            component: NewsComponent
-        },  {
-            path:'contacts',
-            component: ContactsComponent
-        }
-    ]
+        component: DashboardComponent
+    //     children: [
+    //     {
+    //         path: '',
+    //         redirectTo: 'home'
+    //     },  {
+    //         path: 'home',
+    //         component: HomeComponent
+    //     },  {
+    //         path:'products',
+    //         component: ProductsComponent
+    //     },  {
+    //         path:'services',
+    //         component: ServicesComponent
+    //     },  {
+    //         path:'news',
+    //         component: NewsComponent
+    //     },  {
+    //         path:'contacts',
+    //         component: ContactsComponent
+    //     }
+    // ]
     }
 ];
 
